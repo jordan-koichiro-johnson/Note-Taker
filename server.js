@@ -5,7 +5,7 @@ const fs = require("fs");
 // instantianting a new express server
 const app = express();
 // selecting network port
-const PORT = 3000;
+const PORT = process.env.PORT || 3000
 // importing path package from standard library
 const path =require("path");
 const { v4: uuidv4 } = require('uuid');
